@@ -1,0 +1,32 @@
+.work{
+    padding-bottom: 94px;
+}
+.work-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.work-list__item{
+    width: 370px;
+    position: relative;
+}
+.work-list__text{
+    color: var(--web-studio-white);
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 27px 0;
+    bottom: 0;
+}
+.work__title{ 
+    display: flex;
+    color: var(--title); 
+    font-size: 36px; 
+font-weight: 700; 
+letter-spacing: 1.08px; 
+margin-bottom: 50px;
+justify-content: center;
+}
