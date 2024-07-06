@@ -2,9 +2,6 @@
 .header{
     padding-top: 24px;
     padding-bottom: 24px;
-    // @media screen and (min-width: ) {
-        
-    // }
     .container{
         display: flex;
         align-items: center;
@@ -37,18 +34,11 @@
         color: getColor('web-studio-blue');
     } 
 }
-// .nav, .contacts-list{
-//     @media screen and (min-width: 768px){
-        
-//     }
-// }
 .nav{
     display: flex;
     align-items: center;
 }
-// .header-spacer{
 
-// }
 .header-spacer__logo{ 
     font-size: 26px; 
 font-family: getFonts('Raleway'); 
