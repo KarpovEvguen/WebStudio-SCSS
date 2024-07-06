@@ -382,45 +382,49 @@
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
-        <button class="modal__close-btn" data-modal-close>
-            <svg class="modal__close-svg" width="11" height="11">
-                <use href="./images/symboldefs.svg#close"></use>
-            </svg>
-        </button>
         <form class="modal">
+            <button class="modal__close-btn" data-modal-close>
+                <svg class="modal__close-svg" width="11" height="11">
+                    <use href="./images/symboldefs.svg#close"></use>
+                </svg>
+            </button>
             <h3 class="modal__title">Залиште свої данні, ми вам передзвонимо</h3>
             <ul class="modal-list">
                 <li class="modal-list__item">
-                    <label for="name" class="modal-list__label">Ім'я</label>
+                    <label for="name" class="modal-list__label">Ім'я
                     <input type="text" class="modal-list__input" id="name" name="name" required>
                     <svg class="modal-list__svg" width="12" height="12">
                         <use href="./images/symboldefs.svg#human"></use>
                     </svg>
+                </label>
                 </li>
                 <li class="modal-list__item">
-                    <label for="tell" class="modal-list__label">Телефон</label>
+                    <label for="tell" class="modal-list__label">Телефон
                     <input type="text" class="modal-list__input" id="tell" name="tell" required>
                     <svg class="modal-list__svg" width="13" height="13">
                         <use href="./images/symboldefs.svg#contacts"></use>
                     </svg>
+                </label>
                 </li>
                 <li class="modal-list__item">
-                    <label for="email" class="modal-list__label">Пошта</label>
+                    <label for="email" class="modal-list__label">Пошта
                     <input type="email" class="modal-list__input" id="email" name="email" required>
                     <svg class="modal-list__svg" width="13" height="13">
                         <use href="./images/symboldefs.svg#vector"></use>
                     </svg>
+                </label>
                 </li>
                 <li class="modal-list__item">
                     <label class="modal-list__label">Коментар</label>
                     <textarea class="modal-list__textarea" name="comment" id="text" cols="30" rows="10"
                         placeholder="Введіть текст"></textarea>
+                    </label>
                 </li>
             </ul>
             <div class="modal__true">
                 <input type="checkbox" class="modal__check">Погоджуюся з
                 россилкою та приймаю
-                <a href="#" class="modal__link">Умови договору</a>
+                <a href="#" class="modal__link"> Умови договору</a>
             </div>
             <button type="submit" class="modal__btn-submit">Відправити</button>
         </form>

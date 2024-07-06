@@ -4,43 +4,42 @@
  .features-list{
     display: flex;
     gap: 30px;
+    &__item::before{
+      content: "";
+      display: inline-block;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 270px;
+      height: 120px;
+      border-radius: 4px;
+      background-color: getColor('team-bg');
+      margin-bottom: 30px;
+   }
+   &__item:nth-child(1)::before{
+      background-image: url('../images/antenna.svg');
+   }
+   &__item:nth-child(2)::before{
+      background-image: url('../images/clock.svg');
+   }
+   &__item:nth-child(3)::before{
+      background-image: url('../images/diagram.svg');
+   }
+   &__item:nth-child(4)::before{
+      background-image: url('../images/astronaut.svg');
+   }
+   &__title{ 
+      font-size: 14px;
+      color: getColor('title');
+      font-weight: 700; 
+  text-transform: uppercase; 
+  letter-spacing: 0.42px; 
+  } 
+  &__description{ 
+      color: getColor('text');
+      font-size: 14px; 
+  font-weight: 400; 
+  line-height: 1.7; 
+  letter-spacing: 0.42px; 
+  margin: 10px 0 0;
+  } 
  }
- .features-list__item::before{
-    content: "";
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 270px;
-    height: 120px;
-    border-radius: 4px;
-    background-color: #F5F4FA;
-    margin-bottom: 30px;
- }
- .features-list__item:nth-child(1)::before{
-    background-image: url('../images/antenna.svg');
- }
- .features-list__item:nth-child(2)::before{
-    background-image: url('../images/clock.svg');
- }
- .features-list__item:nth-child(3)::before{
-    background-image: url('../images/diagram.svg');
- }
- .features-list__item:nth-child(4)::before{
-    background-image: url('../images/astronaut.svg');
- }
-.features-list__title{ 
-    font-size: 14px;
-    color: var(--title); 
-    font-weight: 700; 
-text-transform: uppercase; 
-letter-spacing: 0.42px; 
-} 
- 
-.features-list__description{ 
-    color: var(--text); 
-    font-size: 14px; 
-font-weight: 400; 
-line-height: 1.7; 
-letter-spacing: 0.42px; 
-margin: 10px 0 0;
-} 

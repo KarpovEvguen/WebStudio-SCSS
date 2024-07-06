@@ -1,6 +1,6 @@
 .footer{ 
     padding: 60px 0;
-    background-color: var(--web-studio-black); 
+    background-color: getColor('web-studio-black');
 } 
 .footer-content-item{
     display: flex;
@@ -8,33 +8,34 @@
 }
 .footer-contacts__logo{
         font-size: 26px; 
-    font-family: "Raleway", sans-serif; 
+    font-family: getFonts('Raleway');
     font-weight: 700; 
-    color: var(--web-studio-blue); 
+    color: getColor('web-studio-blue');
     letter-spacing: 0.78px; 
     }
 .footer-contacts__logo--studio{
-    color: var(--web-studio-white);
+    color: getColor('web-studio-white');
 }
-.address__city{ 
-    color: var(--web-studio-white); 
-    font-size: 14px; 
-font-weight: 400; 
-line-height: 24px; 
-letter-spacing: 0.42px; 
-margin-top: 20px;
-} 
+
 .address{
     display: flex;
     flex-direction: column;
     gap: 9px;
-}
-.address__contacts{ 
-    display: flex;
-    color: var(--text); 
-    font-size: 14px; 
-font-weight: 400; 
-line-height: 24px; 
-letter-spacing: 0.42px; 
-flex-direction: column;
+    &__contacts{ 
+        display: flex;
+        color: getColor('text');
+        font-size: 14px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0.42px; 
+    flex-direction: column;
+    }
+    &__city{ 
+        color: getColor('web-studio-white');
+        font-size: 14px; 
+    font-weight: 400; 
+    line-height: 24px; 
+    letter-spacing: 0.42px; 
+    margin-top: 20px;
+    } 
 }
