@@ -1,7 +1,15 @@
 .container{
-    width: 1200px;
+    min-width: 320px;
+    width: 100%;
+    max-width: 767px;
     padding: 0 15px;
     margin: 0 auto;
+    @media (min-width: 768px) {
+        max-width: 768px;
+    }
+    @media (max-width:1200px) {
+        max-width: 1200px;
+    }
 }
 body{ 
     font-family: getFonts('Roboto'); 
@@ -9,3 +17,6 @@ body{
     font-style: normal; 
     line-height: normal; 
 } 
+.header, .main, .footer{
+    min-width: 320px;
+}

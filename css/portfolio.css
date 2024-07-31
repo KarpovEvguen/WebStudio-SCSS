@@ -1,7 +1,19 @@
 .container {
-  width: 1200px;
+  min-width: 320px;
+  width: 100%;
+  max-width: 767px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 body {
@@ -9,6 +21,10 @@ body {
   font-size: 14px;
   font-style: normal;
   line-height: normal;
+}
+
+.header, .main, .footer {
+  min-width: 320px;
 }
 
 ul {
@@ -26,8 +42,18 @@ ul, p, h1, h2, h3, button {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 21px 0;
+  }
+}
+@media (min-width: 1200px) {
+  .header {
+    padding: 26px 0;
+  }
 }
 .header .container {
   display: flex;
@@ -36,26 +62,33 @@ ul, p, h1, h2, h3, button {
 }
 
 .header-list {
-  display: flex;
-  justify-content: flex-end;
-  gap: 50px;
+  display: none;
 }
-.header-list__link {
-  color: var(--title);
-  font-weight: 500;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 768px) {
+  .header-list {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+  }
 }
-.header-list__link--current::after {
-  display: block;
-  background-color: #2196F3;
-  content: "";
-  height: 4px;
-  border-radius: 2px;
-  position: relative;
-  top: 28px;
-  left: 0;
+@media (min-width: 768px) {
+  .header-list__link {
+    color: var(--title);
+    font-weight: 500;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .header-list__link--current::after {
+    display: block;
+    background-color: #2196F3;
+    content: "";
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    top: 28px;
+    left: 0;
+  }
 }
 .header-list__item:hover .header-list__link {
   color: #2196F3;
@@ -66,6 +99,17 @@ ul, p, h1, h2, h3, button {
   align-items: center;
 }
 
+@media (min-width: 768px) {
+  .header-spacer {
+    gap: 88px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-spacer {
+    gap: 92px;
+  }
+}
+
 .header-spacer__logo {
   font-size: 26px;
   font-family: "Raleway", sans-serif;
@@ -74,14 +118,28 @@ ul, p, h1, h2, h3, button {
   letter-spacing: 0.78px;
   margin-right: 80px;
 }
+@media (min-width: 1200px) {
+  .header-spacer__logo {
+    font-size: 26px;
+  }
+}
 .header-spacer__logo--studio {
   color: #000000;
 }
 
-.contacts-list {
-  display: flex;
-  gap: 50px;
-  align-items: center;
+@media (min-width: 768px) {
+  .contacts-list {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-list {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
 }
 .contacts-list__item {
   color: #757575;
@@ -92,25 +150,53 @@ ul, p, h1, h2, h3, button {
   line-height: normal;
   letter-spacing: 0.28px;
 }
-.contacts-list__link {
-  display: flex;
-  color: #757575;
-  font-size: 14px;
-  font-weight: 500;
-  align-items: center;
-  gap: 10px;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 768px) {
+  .contacts-list__link {
+    display: flex;
+    color: #757575;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    gap: 10px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-list__link:hover {
+    color: #2196F3;
+  }
 }
-.contacts-list__link:hover {
-  color: #2196F3;
+@media (min-width: 768px) {
+  .contacts-list__svg {
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-list__svg--mail {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts-list__svg--tell {
+    width: 10px;
+    height: 14px;
+  }
 }
-.contacts-list__svg {
-  fill: #757575;
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+@media (min-width: 1200px) {
+  .contacts-list__svg {
+    fill: #757575;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-list__svg--mail {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts-list__svg--tell {
+    width: 10px;
+    height: 14px;
+  }
 }
 .contacts-list__link:hover .contacts-list__svg {
   fill: #2196F3;
