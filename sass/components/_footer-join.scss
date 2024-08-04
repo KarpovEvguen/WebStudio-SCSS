@@ -14,9 +14,7 @@
 }
 
 .comunication-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     gap: 10px;
     &__item{
         width: 44px;
@@ -25,9 +23,7 @@
 }
 
 .comunication-list__link--footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex;
     width: 44px;
     height: 44px;
     border: 2px solid none;

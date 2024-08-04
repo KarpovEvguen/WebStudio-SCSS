@@ -366,10 +366,7 @@ ul, p, h1, h2, h3, button {
 }
 
 .comunication-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+  @i gap: 10px;
 }
 .comunication-list__item {
   width: 44px;
