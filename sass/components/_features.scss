@@ -5,7 +5,7 @@
    }
  }
  .features-list{
-    display: flex;
+   @include flex(space-between, flex-start);
     gap: 30px;
     &__item{
       flex: 1 1 100%;
@@ -15,7 +15,6 @@
       @media (min-width: 1200px) {
          flex-basis: calc((100% - 90px) / 4);
       }
-    }
     &::before{
       content: "";
       display: inline-block;
@@ -27,28 +26,29 @@
       background-color: getColor('team-bg');
       margin-bottom: 30px;
    }
-   &__item:nth-child(1)::before{
+   &:nth-child(1)::before{
       background-image: url('../images/antenna.svg');
    }
-   &__item:nth-child(2)::before{
+   &:nth-child(2)::before{
       background-image: url('../images/clock.svg');
    }
-   &__item:nth-child(3)::before{
+   &:nth-child(3)::before{
       background-image: url('../images/diagram.svg');
    }
-   &__item:nth-child(4)::before{
+   &:nth-child(4)::before{
       background-image: url('../images/astronaut.svg');
    }
+}
    &__title{ 
-      @include text(700, 0.42px, $t-align:center, $transf: uppercase);
+      @include text(14px, 700, 0.42px, $t-align:center, $transf: uppercase);
       color: getColor('title');
+      margin-bottom: 10px;
       @media (min-width: 768px) {
          text-align: left;
       }
   } 
   &__description{ 
       color: getColor('text');
-      @include text(1.7, 0.42px);
-  margin: 10px 0 0;
+      @include text();
   } 
  }

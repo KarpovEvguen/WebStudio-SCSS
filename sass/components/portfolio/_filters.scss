@@ -1,11 +1,22 @@
 .projects{
-    padding: 94px 0;
+    padding: 60px 0;
+    @media (min-width: 1200px) {
+        padding: 94px 0;
+    }
 }
 .filters{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    @media (min-width: 768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media (min-width: 1200px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
     &__btn{
         border: none;
         border-radius: 4px;

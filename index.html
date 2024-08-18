@@ -20,8 +20,11 @@
         <div class="container">
             <div class="header-spacer">
                 <nav class="nav">
+                    <!-- <input type="checkbox" class="header" id="toggle">
+                    <label for="toggle" class="header-label">
+                        <span class="header-span"></span>   -->
                     <a href="./index.html" class="logo header-spacer__logo">Web<span
-                            class="header-spacer__logo header-spacer__logo--studio">Studio</span></a>
+                            class=" header-spacer__logo--studio">Studio</span></a>
                     <ul class="header-list">
                         <li class="header-list__item">
                             <a href="./index.html" class="header-list__link header-list__link--current">Студія</a>
@@ -54,7 +57,7 @@
             </ul>
         </div>
     </header>
-     <!--<main class="main">
+    <main class="main">
         <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
@@ -113,7 +116,9 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="team-list">
                     <li class="team-list__item">
-                        <img src="./images/human1.jpg" alt="Ігор Дем'яненко" class="team-list__image" width="270">
+                        <div class="team-list__thumb">
+                            <img src="./images/human1.jpg" alt="Ігор Дем'яненко"
+                                class="team-list__image" width="270"></div>
                         <h3 class="team-list__title">Ігор Дем'яненко</h3>
                         <p class="team-list__description">Product Designer</p>
                         <ul class="comunication-list">
@@ -152,7 +157,9 @@
                         </ul>
 
                     <li class="team-list__item">
-                        <img src="./images/human2.jpg" alt="Ольга Рєпіна" class="team-list__image" width="270">
+                        <div class="team-list__thumb">
+                            <img src="./images/human2.jpg" alt="Ольга Рєпіна"
+                                class="team-list__image" width="270"></div>
                         <h3 class="team-list__title">Ольга Рєпіна</h3>
                         <p class="team-list__description">Frontend Developer</p>
                         <ul class="comunication-list">
@@ -191,7 +198,10 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/human.jpg" alt="Микола Тарасов" class="team-list__image" width="270">
+                        <div class="team-list__thumb"> 
+                            <img src="./images/human.jpg" alt="Микола Тарасов"
+                                class="team-list__image" width="270">
+                        </div>
                         <h3 class="team-list__title">Микола Тарасов</h3>
                         <p class="team-list__description">Marketing</p>
                         <ul class="comunication-list">
@@ -230,7 +240,10 @@
                         </ul>
                     </li>
                     <li class="team-list__item">
-                        <img src="./images/human4.jpg" alt="Михайло Єрмаков" class="team-list__image" width="270">
+                        <div class="team-list__thumb">
+                             <img src="./images/human4.jpg" alt="Михайло Єрмаков"
+                                class="team-list__image" width="270">
+                        </div>
                         <h3 class="team-list__title">Михайло Єрмаков</h3>
                         <p class="team-list__description">UI Designer</p>
                         <ul class="comunication-list">
@@ -271,13 +284,13 @@
                 </ul>
             </div>
         </section>
-        <section class="company">
+         <section class="company">
             <div class="container">
                 <h2 class="company__title">Постійні клієнти</h2>
                 <ul class="company-list">
                     <li class="company-list__item">
                         <a href="#" class="company-list__link">
-                            <svg width="41" height="46">
+                            <svg class="company-list__svg" width="41" height="46">
                                 <use href="./images/symboldefs.svg#company1"></use>
                             </svg>
                         </a>
@@ -322,7 +335,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+     <footer class="footer">
         <div class="container footer-content-item">
             <section class="footer-contacts">
                 <a href="./index.html" class="logo footer-contacts__logo">Web<span
@@ -366,7 +379,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="footer-subscribe">
+           <section class="footer-subscribe">
                 <h2 class="footer-subscribe__title">ПІДПИШІТЬСЯ НА РОЗСИЛКУ</h2>
                 <form class="footer-form">
                     <label class="footer-form__label">
@@ -428,8 +441,8 @@
             </div>
             <button type="submit" class="modal__btn-submit">Відправити</button>
         </form>
-    </div>-->
+    </div>
     <script src="./js/modal.js"></script>
 </body>
 
-</html> 
+</html>

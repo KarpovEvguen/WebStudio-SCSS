@@ -1,18 +1,26 @@
 .footer-subscribe{
+    min-width: 290px;
+    width: 100%;
+    max-width: 450px;
     margin-top: 8px;
+    @media (min-width: 1200px) {
+        width: 570px;
+    }
     &__title{
         color: getColor('web-studio-white');
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
+        @include text(16px, 500, 1.5, 0.02em, $t-align: center, $transf: uppercase);
         margin-bottom: 20px;
+        @media (min-width: 1200px) {
+            text-align: left;
+        }
     }
 }
 
 .footer-form{
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
+    @media (min-width: 1200px) {
+        @include flex(space-between, flex-end);
+    }
     &__input{
         color: getColor('web-studio-white');
         background-color: transparent;
@@ -27,21 +35,20 @@
         padding: 0 16px;
         box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
         margin-right: 10px;
+        @media (min-width: 1199px) {
+            margin-bottom: 20px;
+        }
+        @media (min-width: 1200px) {
+            max-width: 358px;
+        }
     }
     &__btn{
-        display: inline-flex;
-        justify-content: space-around;
-        align-items: center;
         fill: getColor('web-studio-white');
         color: getColor('web-studio-white');
         background-color: getColor('web-studio-blue');
-        width: 200px;
-        height: 50px;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 187%;
-        letter-spacing: 0.06em;
-        text-align: center;
+        @include btn(200px, 50px);
+        @include flex(center);
+        @include text(16px, 700, 187%, 0.06em, center);
         border: none;
         border-radius: 4px;
         cursor: pointer;

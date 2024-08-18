@@ -1,11 +1,14 @@
 .hero{ 
     background-color: getColor('web-studio-black');
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.40),rgba(47, 48, 58, 0.40)), url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    @media (min-width: 1200px) {
+        padding: 200px 0;
+    }
     &__title{ 
         max-width: 360px;
         font-weight: 900; 
@@ -16,7 +19,11 @@
         letter-spacing: 2.64px; 
         color: getColor('web-studio-white');
         margin: 0 auto;
-        @media (max-width: 1200px) {
+        @media (min-width: 768px) {
+            max-width: 360px;
+            font-size: 26px;
+        }
+        @media (min-width: 1200px) {
             max-width: 696px;
             font-size: 44px;
         }
@@ -25,8 +32,8 @@
         @include btn(200px);
         @include text(16px, 700, 1.8, 0.96px);
         color: getColor('web-studio-white');
-        background: getColor('web-studio-blue');
         margin: 30px auto 0;
+        text-align: center;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
         @media (min-width: 1200px) {
             @include btn(216px);

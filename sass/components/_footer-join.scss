@@ -6,15 +6,16 @@
     &__title{
         margin-right: 50px;
         margin-bottom: 20px;
-        font-weight: 700;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: getColor('web-studio-white')
+        @include text($f-weight: 700, $l-spacing: 0.03em, $t-align: center, $transf: uppercase);
+        color: getColor('web-studio-white');
+        @media (min-width: 1200px) {
+            text-align: left;
+        }
     }
 }
 
 .comunication-list{
-    @extend %flex;
+    @extend %flex-center;
     gap: 10px;
     &__item{
         width: 44px;
@@ -23,7 +24,7 @@
 }
 
 .comunication-list__link--footer{
-    @extend %flex;
+    @extend %flex-center;
     width: 44px;
     height: 44px;
     border: 2px solid none;

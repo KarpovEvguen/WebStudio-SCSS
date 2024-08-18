@@ -2,6 +2,14 @@
     padding: 60px 0;
     background-color: getColor('web-studio-black');
 } 
+.footer .container{
+    @include flex(space-around, baseline);
+    gap: 60px;
+    @media (min-width: 1200px) {
+        justify-content: space-between;
+        gap: 0;
+    }
+}
 .footer-content-item{
     display: flex;
     gap: 93px;
@@ -12,22 +20,26 @@
     font-weight: 700; 
     color: getColor('web-studio-blue');
     letter-spacing: 0.78px; 
+    text-align: center;
+    @media (min-width: 1200px) {
+        text-align: left;
+    }
     }
 .footer-contacts__logo--studio{
     color: getColor('web-studio-white');
 }
 
 .address{
-    display: flex;
-    flex-direction: column;
+    @include flex($al-items: center, $f-dir: column);
     gap: 9px;
+    @media (min-width: 1200px) {
+        align-items: flex-start;
+        gap: 9px;
+    }
     &__contacts{ 
         display: flex;
         color: getColor('text');
-        font-size: 14px; 
-    font-weight: 400; 
-    line-height: 24px; 
-    letter-spacing: 0.42px; 
+    @include text(14px, 400, 24px, 0.42px);
     flex-direction: column;
     }
     &__city{ 
