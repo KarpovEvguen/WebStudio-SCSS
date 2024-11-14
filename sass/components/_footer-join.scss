@@ -4,10 +4,13 @@
     flex-direction: column;
     align-items: center;
     &__title{
+        display: flex;
+        justify-content: center;
         margin-right: 50px;
         margin-bottom: 20px;
         @include text($f-weight: 700, $l-spacing: 0.03em, $t-align: center, $transf: uppercase);
         color: getColor('web-studio-white');
+        text-align: center;
         @media (min-width: 1200px) {
             text-align: left;
         }

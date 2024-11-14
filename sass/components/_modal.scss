@@ -17,10 +17,14 @@
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 450px;
     padding: 40px;
     border-radius: 6px;
     background-color: getColor('web-studio-white');
     transform: translate(-50%, -50%);
+    @media (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal__close-btn{
@@ -59,6 +63,7 @@
     font-weight: 700;
     font-size: 20px;
     letter-spacing: 0.03em;
+    line-height: 1.5;
     text-align: center;
     margin-bottom: 12px;
 }
@@ -137,12 +142,14 @@
 .modal__true {
     color: getColor('text');
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
     letter-spacing: 0.03em;
     margin-left: 11px;
     margin-bottom: 40px;
-    
+    @media (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.71;
+    }
 }
 .modal__check{
     color: getColor('title');
@@ -153,16 +160,6 @@
     text-align: center;
     margin-right: 7px;
 }
-// .moda__check{
-//     width: 16px;
-//     height: 15px;
-//     border: 2px solid getColor('web-studio-black');
-//     margin-right: 5px;
-// }
-// .modal__link{
-//     color: getColor('web-studio-blue');
-//     text-decoration: underline;
-// }
 .modal__btn-submit{
     border-radius: 4px;
     border: none;
@@ -172,7 +169,7 @@
     font-weight: 700;
     letter-spacing: 0.96px;
     line-height: 1.8;
-    width: 216px;
+    width: 200px;
     height: 50px;
     background: getColor('web-studio-blue');
     margin: 0 auto;

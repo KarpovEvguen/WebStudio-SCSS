@@ -107,8 +107,9 @@
     } 
 }
 .nav{
-    display: flex;
-    align-items: center;
+    @extend %flex-center;
+    // display: flex;
+    // align-items: center;
 }
 .header-spacer{
     display: flex;
@@ -127,12 +128,12 @@ font-family: getFonts('Raleway');
 font-weight: 700; 
 color: getColor('web-studio-blue');
 letter-spacing: 0.78px; 
-margin-right: 90px;
 @media (min-width: 1200px) {
     font-size: 26px;
 }
 &--studio{
     color: getColor('black');
+    margin-right: 90px;
 }
 } 
 

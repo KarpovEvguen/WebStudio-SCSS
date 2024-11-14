@@ -4,7 +4,7 @@
     max-width: 450px;
     margin-top: 8px;
     @media (min-width: 1200px) {
-        width: 570px;
+        max-width: 580px;
     }
     &__title{
         color: getColor('web-studio-white');
@@ -17,9 +17,18 @@
 }
 
 .footer-form{
-    @extend %flex-center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     @media (min-width: 1200px) {
-        @include flex(space-between, flex-end);
+        @include flex(flex-end);
+        gap: 12px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
     }
     &__input{
         color: getColor('web-studio-white');

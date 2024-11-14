@@ -15,14 +15,15 @@
     gap: 93px;
 }
 .footer-contacts__logo{
+    display: flex;
+    justify-content: center;
         font-size: 26px; 
     font-family: getFonts('Raleway');
     font-weight: 700; 
     color: getColor('web-studio-blue');
     letter-spacing: 0.78px; 
-    text-align: center;
     @media (min-width: 1200px) {
-        text-align: left;
+        justify-content: start;
     }
     }
 .footer-contacts__logo--studio{
